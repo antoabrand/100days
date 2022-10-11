@@ -1,10 +1,9 @@
-mod rando;
 mod play;
+mod rando;
 
-use rando::generate_random_num;
 use play::play_game;
+use rando::generate_random_num;
 fn main() {
-    println!("Hello, Guessing game!");
-    println!("Please guess a number");
-    play_game(generate_random_num(1,100));
+    println!("Guess a number between 1 and 100...");
+    play_game(generate_random_num(1, 100));
 }
